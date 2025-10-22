@@ -13,9 +13,9 @@ const form = document.getElementById("contactForm");
 const message = document.getElementById("formMessage");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault(); // stop real submission
+  e.preventDefault(); 
 
-  // Clear previous errors
+  
   document.querySelectorAll(".error-text").forEach((el) => el.textContent = "");
 
   let isValid = true;
@@ -71,7 +71,7 @@ form.addEventListener("submit", (e) => {
   }
 });
 
-// ---- Helper to show error messages ----
+// ---- show error messages ----
 function showError(input, msg) {
   const errorId = input.id + "-error";
   let errorEl = document.getElementById(errorId);
